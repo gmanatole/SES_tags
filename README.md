@@ -1,7 +1,7 @@
 # BIOLOGGING TOOLKIT
 
 This package aims to handle biologging datasets, from raw data processing to specific applications on acoustic or inertial data.
-Most processing functions automatically access DTAG4 data, but classes also handle raw inputs.
+Most processing functions automatically access DTAG4 data (from SNO MEMO), but classes also handle raw inputs.
 
 It is divided into different sections :
 - processing : Creates finalized dataset of processed data (sound pressure level data, animal posture and heading, jerk data, etc.) from raw data.
@@ -41,7 +41,12 @@ acoustic = Acoustic(depid, path=path, raw_path = raw_path, instrument = instrume
 
 acoustic.N = 60   # Modify timestep of dataset (in seconds). Defaults to 3.
 acoustic()    # Get power spectral densities at desired timestep for all frequencies
+```
 
+## Author
 
+Anatole Gros-Martial
+- GitHub: https://github.com/gmanatole
+- Email: anatole.gros-martial@cebc.cnrs.fr
 
 
